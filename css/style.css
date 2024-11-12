@@ -1,0 +1,988 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #fbfbfb;
+}
+
+/* ================ UTILITES CLASS  ===============
+  =================================================  */
+ul {
+  padding: 0%;
+  margin: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* ================ UTILITES END  ===============
+=================================================  */
+
+/* ============= REGISTER SCREEN  ===============
+=================================================  */
+
+.wrapper {
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+
+.left-section,
+.right-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.left-section {
+  background: #13233F;
+
+}
+
+.welcome-desc {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.welcome-desc h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+}
+
+.welcome-desc p {
+  font-family: 400;
+  font-size: 16px;
+}
+
+.welcome-img h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* =================== slider  ===================
+  =================================================  */
+.mySwiper {
+  width: 100%;
+  display: flex;
+
+}
+
+.swiper-slide-active {
+  display: flex;
+  justify-content: center;
+}
+
+.input_fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.input_fields input {
+  padding: .6rem;
+  border-radius: 0.4rem;
+  font-size: 14px;
+  border: 2px solid #02AFF3;
+  outline: none;
+}
+
+
+.input_fields label {
+  color: #737791;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logo_container h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #13233F;
+}
+
+.logo_container p {
+  color: #737791;
+  font-size: 15;
+  font-weight: 400;
+}
+
+.checkbox_field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.checkbox_field a {
+  font-size: 14px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox p {
+  font-size: 14px;
+}
+
+.right-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right-section .welcome_page_form {
+  gap: 1.3rem;
+}
+
+button {
+  padding: .7rem 5rem;
+  background: #02AFF3;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.have-an-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.have-an-account p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737791;
+}
+
+.have-an-account a {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.page_container {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+
+main {
+  flex: 1 1 0%;
+  overflow-x: auto;
+  padding: 1.5rem;
+}
+
+/* =================== SIDEBAR  ===================
+  =================================================  */
+
+header {
+  background: #fff;
+  width: 260px;
+  height: 100%;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  z-index: 999;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.nav-items li {
+  display: flex;
+  padding: .7rem 2rem;
+  gap: 15px;
+}
+
+.nav-items li i {
+  font-size: .9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #737791;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #737791;
+}
+
+.nav-items .nav_active {
+  background-color: #13233F;
+  padding: .7rem 2rem;
+  border-radius: 10px;
+}
+
+.nav-items .nav_active a,
+.nav-items .nav_active i {
+  color: white;
+}
+
+
+
+/* ================== Section content ================== */
+.dashboard_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #13233F;
+
+}
+
+.dashboard-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.profile-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  width: 360px;
+  height: 44px;
+  /* border: 1px solid red; */
+  
+}
+
+.input_field{
+  position: absolute;
+  width: 300px;
+  height: 20px;
+  /* border: 1px solid black; */
+  left:0;
+  
+}
+input{
+  padding: 5px 10px;
+  /* border: none; */
+}
+
+/* ========================= Overview section ===================  
+==================================================================*/
+
+
+
+.overview_items{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background: white;
+  width: 660px;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+
+
+.overview_item{
+  display: flex;
+  border-right: 1px solid #F0F0F0;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.7rem 0.7rem;
+
+
+}
+
+
+.overview_item.item-1 img{ 
+  background-color: #df688223;
+}
+.overview_icon{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  color: #02AFF3;
+}
+.overview_item img{
+  padding: 1.8rem 1.8rem;
+  background-color: #02AFF31A;
+  border-radius: 3rem;
+}
+
+.overview_icon.icon-1{
+  color: #FA5A7D;
+}
+
+.overview_desc p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ======================== Today sale summary section ========================
+================================================================================ */
+
+.today_summary_items{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background: white;
+  width: 990px;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+
+
+
+/*============================= Monthly section ==================================
+==================================================================================*/
+.monthly_section{
+  border-radius: 1rem;
+}
+.monthly_sale_container{
+  background: white;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 90%;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1;
+}
+.monthly_item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+
+
+
+
+/*============================= Monthly section buttons =========================
+==================================================================================*/
+.section-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  gap: 4rem;
+
+  
+
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #737791;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #27BC27;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* ============================ Monthly section progress bar ============================
+=========================================================================================*/
+
+.box{
+  width: 500px;
+  height: 10px;
+  border: 1px solid black;
+}
+
+.line{
+  width: 80%;
+  height: 9px;
+  background-color: green;
+  transform-origin: left;
+  /* border-radius: 1rem; */
+}
+
+.line.item_2{
+  background-color: #FA5A7D;
+}
+
+.line.item_3{
+  background-color: #BF83FF;
+}
+.line.item_4{
+  background-color: #02AFF3;
+}
+
+.monthly_items{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90%;
+  gap: 0.5rem;
+  padding: 1rem 1rem;
+  background-color: white;
+}
+
+.monthly_items.line.item_3{
+  padding-left: 2rem;
+}
+.monthly_item  .btn-1{
+  background: #27BC271A !important;
+  color: #27BC27;
+  padding: 7px 25px;
+  border: 1px solid #27BC27;
+  border-radius: 0.5rem;
+
+}
+
+.monthly_item  .btn-2{
+  background: #FA5A7D1A !important;
+  color: #FA5A7D;
+  padding: 7px 25px;
+  border: 1px solid #FA5A7D;
+  border-radius: 0.5rem;
+
+
+}
+
+.monthly_item  .btn-3{
+  background: #BF83FF1A !important;
+  color: #BF83FF;
+  padding: 7px 25px;
+  border: 1px solid #BF83FF;
+  border-radius: 0.5rem;
+
+
+}
+
+.monthly_item  .btn-4{
+  background: #02AFF31A !important;
+  color: #02AFF3;
+  padding: 7px 25px;
+  border: 1px solid #02AFF3;
+  border-radius: 0.5rem;
+
+
+}
+
+
+/* =============================== Add product section =============================
+====================================================================================== */
+.add_product_section{
+  background: white;
+  width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.add_product_image_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* width: 40%; */
+}
+
+.desc_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.desc_link h4{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.add_product_box{
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  border: 1px dashed #384EB74D;
+  width: 40%;
+  row-gap: 1rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.add_product_box p{
+  font-size: 10px;
+  font-weight: 400;
+  color: #676767;
+}
+
+/* ===================== Form section styling ==========================
+========================================================================*/
+.form_inputs{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-direction: c ; */
+  /* row-gap: 1rem; */
+  /* padding: .3rem; */
+
+
+}
+.form_input{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: .5rem;
+  row-gap: .5rem;
+
+
+
+  
+}
+
+.form_input input{
+  width: 458px;
+  height: 48px;
+  border-radius: 0.2rem;
+  border: 1px solid #737791;
+
+}
+.form_input label{
+  font-weight: 500;
+  font-size: 16px;
+  color: #13233F;
+}
+
+/* ============================= Second form section inputs ======================== */
+.form_inputs_2{
+  padding: 1rem 2rem;
+}
+
+.form_input_2 select{
+  width: 100%;
+  height: 48px;
+  border-radius: 0.2rem;
+  border: 1px solid #737791;
+}
+.form_input_2 input{
+  width: 100%;
+  height: 48px;
+  border-radius: 0.2rem;
+  border: 1px solid #737791;
+  padding-top: .5rem;
+  
+}
+.form_input_2 label{
+  font-weight: 500;
+  font-size: 16px;
+  color: #13233F;
+}
+
+/* ============================= third form section inputs ======================== */
+.form_inputs_3{
+  padding: 1rem 2rem;
+}
+.form_input_3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+.form_inputs_3 input{
+  width: 300px;
+  height: 48px;
+}
+
+/* ============================= forth form section inputs ======================== */
+
+.form_inputs_4{
+  padding: 1rem 2rem;
+
+}
+.form_inputs_4 textarea{
+  width: 100%;
+  height: 90px;
+  padding: .5rem .8rem;
+}
+.form_input_4 label{
+  font-weight: 500;
+  font-size: 16px;
+  color: #13233F;
+}
+
+
+
+/* ============================= fifth form section inputs ======================== */
+.form_inputs_5{
+  padding: 1rem 2rem;
+}
+
+.form_input_5 label{
+  font-weight: 500;
+  font-size: 16px;
+  color: #13233F;
+}
+.form_5_radio_container{
+  display: flex;
+  gap: 1rem;
+}
+
+
+/* ============================= sixth form section inputs ======================== */
+
+.form_inputs_6{
+  padding: 1rem 2rem;
+}
+
+.form_input_6 p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #737791;
+}
+
+/* ============================= seventh form section inputs ======================== */
+
+.form_inputs_7{
+  padding: 1rem 2rem;
+}
+
+.form_input_7{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 3rem;
+  transform: traslate(0.2s);
+}
+
+
+.btn_cancel{
+  padding: .7rem 2rem;
+  background-color: white;
+  color: #02AFF3;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: .3rem;
+  border: 1px solid #02AFF3;
+  transition: transform 0.2s;
+
+}
+.btn_save{
+  padding: .7rem 2rem;
+  background-color: #02AFF3;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: .3rem;
+  transition: transform 0.2s;
+}
+
+.btn_save:active{
+  transform: scale(0.95);
+}
+
+.btn_cancel:active{
+  transform: scale(0.95);
+
+}
+
+.btn_save:hover{
+  color: wheat;
+}
+
+/* ============================ pop up button styling =============================
+==================================================================================== */
+
+.popup{
+  background-color: white;
+  width: 500px;
+  transform: translate(-10%,-10%) scale(0.1);
+}
+
+.popup_items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.popup_button{
+  padding: .5rem 5rem;
+  background: #02AFF3;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: .4rem;
+}
+
+.popup_button:hover{
+  color: white;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-10%,-10%) scale(1);
+}
+
+
+
+
+/* ==================== Table Styling dashboard ======================
+======================================================================= */
+.products_title{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.styled-table thead tr {
+  text-align: center;
+  border-bottom: 1px solid #C6CBD299;
+
+}
+.styled-table thead tr th{
+  font-size: 14px;
+  font-weight: 600;
+  color: #13233F;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 8px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 1px solid #C6CBD299;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.img_title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.img_title p{
+  font-weight: 400;
+  font-size: 12px;
+  color: #737791;
+
+}
+
+.img_title a{
+  padding: 5px 30px;
+  background-color: #02AFF31A;
+  border-radius: 1rem;
+  font-weight: 400;
+  color: #02AFF3;
+  font-size: 10px;
+}
+
+.action_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ============================ Invoices pages styling ==========================
+================================================================================= */
+.invoice_link {
+  color: #02AFF3;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+/* ============================== Payment page section ===========================
+==================================================================================*/
+.payment_section_items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 8rem;
+  width: 90%;
+  padding-top: 5rem;
+}
+.pay_with_paypal{
+  background-color: white;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0rem;
+}
+
+.debit_container{
+  background-color: #000000;
+  width: 87%;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: .3rem;
+
+}
+
+.pay_with_stripe{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 6rem;
+  background-color: white;
+  width: 40%;
+  padding: 2rem 0rem;
+}
+
+.pay_with_paypal a{
+  background-color: #FFC43A;
+  width:100%;
+  padding: .5rem 9rem;
+  border-radius: .3rem;
+}
+
+/* ========================= Agreement page stylig ==========================
+============================================================================= */
+.seller_agreement{
+  background-color: white;
+  padding: 2rem 4rem;
+}

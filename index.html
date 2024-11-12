@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <!-- fontawesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>dashboard</title>
+</head>
+
+<body>
+    <div class="page_container">
+        <!-- Navbar section  -->
+        <header>
+            <div class="nav-logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <ul class="nav-items">
+                <li class="nav_active">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-box-open"></i>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-building"></i>
+                    <a href="#">Agencies</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-wallet"></i>
+                    <a href="#">Payments</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-receipt"></i>
+                    <a href="#">Invoices</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-address-book"></i>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-id-badge"></i>
+                    <a href="#">Agreement</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-question"></i>
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#">Profile</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </header>
+        <!-- section content -->
+        <main>
+            <div class="dashboard_header">
+                <h2>Dashboard</h2>
+                <div class="dashboard-wrapper">
+                    <div class="search-title">
+                        <input type="search" placeholder="    Search here">
+                        <div class="input_field">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="profile-img">
+                        <div class="profile-title">
+                            <h6>Dextersol</h6>
+                            <p>ID: 2888</p>
+                        </div>
+                        <img src="./img/profile.png" alt="profile image">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Overview section -->
+            <div class="overview_section mt-5">
+                <h3>Overview</h3>
+                <div class="overview_items">
+                    <div class="overview_item">
+                        <img src="./img/Vector.png" alt="vectore image">
+                        <div class="overview_desc">
+                            <p>Number of clicks</p>
+                            <h2>200</h2>
+                            <div class="overview_icon">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <p>37.7%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview_item item-1">
+                        <img src="./img/Vector (1).png" alt="vectore image">
+                        <div class="overview_desc">
+                            <p>Registerd Seller</p>
+                            <h2>200</h2>
+                            <div class="overview_icon icon-1">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <p>37.8%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Today summary section-->
+            <div class="overview_section mt-5">
+                <h3>Today’s Sales Summary</h3>
+                <div class="today_summary_items">
+                    <div class="overview_item">
+                        <img src="./img/money-1.png" alt="vectore image">
+                        <div class="overview_desc">
+                            <p>Monthly Commission</p>
+                            <h2>$10.00</h2>
+                            <div class="overview_icon">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <p>37.7%</p>
+                                <p>Not Payable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview_item item-1">
+                        <img src="./img/rename-2.png" alt="vectore image">
+                        <div class="overview_desc">
+                            <p>Net Monthly Commission</p>
+                            <h2>$10.00</h2>
+                            <div class="overview_icon icon-1">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <p>37.8%</p>
+                                <p>Not Payable</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overview_item">
+                        <img src="./img/money-1.png" alt="vectore image">
+                        <div class="overview_desc">
+                            <p>Number of clicks</p>
+                            <h2>$10.00</h2>
+                            <div class="overview_icon">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <p>37.7%</p>
+                                <p>Payable</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monthly-section  -->
+            <div class="monthly_section mt-5">
+                <div class="monthly_sale_container">
+                    <h3>Monthly Sales</h3>
+                    <div class="section-buttons">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                            <!-- <p>Plus product</p> -->
+                        </label>
+
+                        <label class="switch ">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                            <!-- <p>Standard product</p> -->
+                        </label>
+                    </div>
+                </div>
+                <div class="monthly_items">
+                    <div class="monthly_item mt-5">
+                        <p>Approved</p>
+                        <div class="box">
+                            <div class="line"></div>
+                        </div>
+                        <a class="btn-1">100$</a>
+                    </div><hr>
+                    <div class="monthly_item item_2">
+                        <p>Canceld</p>
+                        <div class="box">
+                            <div class="line item_2"></div>
+                        </div>
+                        <a class="btn-2">100$</a>
+                    </div><hr>
+                    <div class="monthly_item item_3 pl-5">
+                        <p class="">Paid</p>
+                        <div class="box">
+                            <div class="line item_3"></div>
+                        </div>
+                        <a class="btn-3">100$</a>
+                    </div><hr>
+                    <div class="monthly_item">
+                        <p>Not Approved</p>
+                        <div class="box">
+                            <div class="line item_4"></div>
+                        </div>
+                        <a class="btn-4">100$</a>
+                    </div><hr>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

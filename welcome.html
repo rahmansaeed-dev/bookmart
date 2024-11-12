@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left-section">
+            <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="./img/slide_image.png" alt=""></swiper-slide>
+                <swiper-slide><img src="./img/slide_image.png" alt="welcome-image">
+                </swiper-slide>
+                <swiper-slide><img src="./img/slide_image.png" alt="welcome-image">
+                </swiper-slide>
+            </swiper-container>
+            <div class="welcome-desc">
+                <h3>Receive payments from any banking system</h3>
+                <p>Connect your bank card, and create accounts in the selected currency.</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="logo_container">
+                <img src="./img/logo.png" alt="">
+                <h3>Welcome Back!</h3>
+                <p>Please login to access your account.</p>
+            </div>
+            <form action="" class="pt-4 welcome_page_form">
+                <div class="input_fields">
+                    <label for="email">Email</label>
+                    <input class="input_field" type="email" placeholder=" Type your email">
+                </div>
+                <div class="input_fields">
+                    <label for="password">Password</label>
+                    <input class="input_field" type="password" placeholder=" Type your password">
+                </div>
+                <div class="checkbox_field">
+                    <div class="checkbox">
+                        <input type="checkbox" name="Remember me" id="">
+                        <p class="text-dark">Remember me</p>
+                    </div>
+                    <a href="#">Forget Password</a>
+                </div>
+                <button>Login</button>
+                <div class="have-an-account">
+                    <p>Don’t Have an Account? </p>
+                    <a href="#">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Javascript cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
