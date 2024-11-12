@@ -986,3 +986,51 @@ input:checked + .slider:before {
   background-color: white;
   padding: 2rem 4rem;
 }
+
+
+
+
+
+/* ================================== Seller help page =======================
+=============================================================================== */
+.help_section_items{
+  background-color: white;
+  /* width: 90%; */
+  /* text-align: center; */
+  padding: 3rem 3rem;
+}
+
+.help_section_item{
+  width: 80%;
+  border: 1px solid #02AFF3;
+  padding: 1rem 2rem;
+  border-radius: .4rem;
+  margin-top: 1rem;
+}
+
+.title_icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.title_icon h6{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.title_icon input{
+  width: 60px;
+}
+.title_icon i{
+  color: #02AFF3;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+
+
+
+
+
